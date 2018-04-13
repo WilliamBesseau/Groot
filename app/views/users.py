@@ -93,7 +93,13 @@ def login():
 
 @app.route('/forgotten-password')
 def forgottenpwd():
+    raise NotImplementedError
+
     return render_template('forgotten-password.html')
+
+@app.route('/register')
+def register():
+    raise NotImplementedError
 
 
 @app.route('/users')
