@@ -1,19 +1,18 @@
 from os.path import join as path_join
 
-from flask import render_template, send_file
+from flask import render_template, send_file, redirect, url_for
 
 from app import app
-from app.views import teams, ideas, projects, tags, users, speakers, mainteachers, students
+from app.views import dashboard
 from app import errors
 
 
 @app.route('/')
 def index():
-    return render_template(
-        'login.html',
-        title='Bienvenue sur WETA !',
-        subtitle='Workshop Enhanced Token Administration'
-    )
+    print('OK')
+    print('OK')
+    print('OK')
+    return redirect(url_for('get_dashboard'))
 
 
 @app.route('/static/<path:path>')
