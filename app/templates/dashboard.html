@@ -5,6 +5,17 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <p> Welcome to GROOT </p>
+SALUT
+    <p> Date de la dernière analyse : {{ dash.air.date }}</p>
+
+    <p> Valeur de la température = {{ dash.temp_value }} </p>
+    <p> Est-ce que la température est bonne? = {{ dash.temp_status }} </p>
+
+    <p> Valeur de l'humidité = {{ dash.hum_value }} </p>
+    <p> Est-ce que l'humidité est bonne? = {{ dash.hum_status }} </p>
+
+    <p> Qualité de l'air = {{ dash.air.value }} </p>
+    <p> Valeur de l'humidité dans la terre = {{ dash.moisture.value }} </p>
+
 </body>
 </html>
